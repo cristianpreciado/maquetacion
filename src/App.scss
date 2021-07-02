@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+$primary: #fa5673;
+$info: #fa748b;
+$navbar-light-active-color: #fff;
+$font-family-sans-serif: "Montserrat", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
+@import "~bootstrap/scss/bootstrap";
+.text-empresa {
+  color: $primary;
+}
+.hr-card {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $white;
+  margin: 1em 0;
+  padding: 0;
+}
+$btn-custom: $white;
+
+.btn-custom {
+  @include button-variant(
+    $btn-custom,
+    darken($btn-custom, 7.5%),
+    darken($btn-custom, 10%),
+    lighten($btn-custom, 5%),
+    lighten($btn-custom, 10%),
+    darken($btn-custom, 30%)
+  );
+  color: $info;
+  font-size: 10px;
+}
